@@ -2,6 +2,7 @@ package com.sarang.torang.di.dialogsbox_di
 
 import android.util.Log
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.collectAsState
@@ -25,8 +26,8 @@ import com.sarang.torang.di.report_di.provideShareBottomSheetDialog
 fun ProvideMainDialog(
     dialogsViewModel        : FeedDialogsViewModel = hiltViewModel(),
     tag                     : String               = "__ProvideMainDialog",
-    rootNavController       : RootNavController,
-    restaurantBottomSheet   : @Composable ( @Composable () -> Unit ) -> Unit     = { },
+    rootNavController       : RootNavController    = RootNavController(),
+    restaurantBottomSheet   : @Composable ( @Composable () -> Unit ) -> Unit     = { Text("restaurantBottomSheet") },
     content                 : @Composable (PaddingValues) -> Unit = { Log.i(tag, "content does not set")  }
 ) {
     val tag = "__ProvideMainDialog"
