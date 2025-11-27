@@ -10,14 +10,14 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.sarang.torang.FeedDialogsViewModel
 import com.sarang.torang.MainDialogs
 import com.sarang.torang.RootNavController
-import com.sarang.torang.compose.type.LocalCommentBottomSheet
-import com.sarang.torang.compose.type.LocalMenuBottomSheet
-import com.sarang.torang.compose.type.LocalReportBottomSheetType
-import com.sarang.torang.compose.type.LocalRestaurantBottomSheet
-import com.sarang.torang.compose.type.LocalShareBottomSheet
+import com.sarang.torang.LocalCommentBottomSheet
+import com.sarang.torang.LocalMenuBottomSheet
+import com.sarang.torang.LocalReportBottomSheetType
+import com.sarang.torang.LocalRestaurantBottomSheet
+import com.sarang.torang.LocalShareBottomSheet
 import com.sarang.torang.di.bottomsheet_di.provideFeedMenuBottomSheetDialog
-import com.sarang.torang.di.main_di.CommentBottomDialogSheetData
-import com.sarang.torang.di.main_di.provideCommentBottomDialogSheet
+import com.sarang.torang.di.comment_di.CommentBottomDialogSheetData
+import com.sarang.torang.di.comment_di.provideCommentBottomDialogSheet
 import com.sarang.torang.di.report_di.provideReportModal
 import com.sarang.torang.di.report_di.provideShareBottomSheetDialog
 
