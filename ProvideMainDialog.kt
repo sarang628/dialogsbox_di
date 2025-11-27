@@ -16,8 +16,8 @@ import com.sarang.torang.compose.type.LocalReportBottomSheetType
 import com.sarang.torang.compose.type.LocalRestaurantBottomSheet
 import com.sarang.torang.compose.type.LocalShareBottomSheet
 import com.sarang.torang.di.bottomsheet_di.provideFeedMenuBottomSheetDialog
-import com.sarang.torang.di.main_di.CommentBottomDialogSheetData
-import com.sarang.torang.di.main_di.provideCommentBottomDialogSheet
+import com.sarang.torang.di.comment_di.CommentBottomDialogSheetData
+import com.sarang.torang.di.comment_di.provideCommentBottomDialogSheet
 import com.sarang.torang.di.report_di.provideReportModal
 import com.sarang.torang.di.report_di.provideShareBottomSheetDialog
 
