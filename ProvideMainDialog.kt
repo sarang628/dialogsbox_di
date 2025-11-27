@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.sarang.torang.FeedDialogsViewModel
 import com.sarang.torang.MainDialogs
@@ -27,7 +28,8 @@ fun ProvideMainDialog(
     dialogsViewModel        : FeedDialogsViewModel = hiltViewModel(),
     tag                     : String               = "__ProvideMainDialog",
     rootNavController       : RootNavController    = RootNavController(),
-    restaurantBottomSheet   : @Composable ( @Composable () -> Unit ) -> Unit     = { Text("restaurantBottomSheet") },
+    restaurantBottomSheet   : @Composable ( @Composable () -> Unit ) -> Unit     = { Log.i("tag", "restaurantBottomSheet does not set")
+                                                                                     it.invoke() },
     content                 : @Composable (PaddingValues) -> Unit = { Log.i(tag, "content does not set")  }
 ) {
     val tag = "__ProvideMainDialog"
