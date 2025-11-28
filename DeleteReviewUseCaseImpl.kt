@@ -1,6 +1,6 @@
 package com.sarang.torang.di.dialogsbox_di
 
-import com.sarang.torang.DeleteReviewUseCase
+import com.sarang.torang.dialogsbox.usecase.DeleteReviewUseCase
 import com.sarang.torang.repository.FeedRepository
 import dagger.Module
 import dagger.Provides
