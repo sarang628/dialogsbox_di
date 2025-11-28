@@ -22,8 +22,8 @@ import com.sarang.torang.di.report_di.provideReportModal
 import com.sarang.torang.di.report_di.provideShareBottomSheetDialog
 
 @Composable
-fun ProvideMainDialog(
-    dialogsViewModel        : DialogsBoxViewModel = hiltViewModel(),
+fun ProvideDialogsBox(
+    dialogsViewModel        : DialogsBoxViewModel  = hiltViewModel(),
     tag                     : String               = "__ProvideMainDialog",
     rootNavController       : RootNavController    = RootNavController(),
     restaurantBottomSheet   : @Composable ( @Composable () -> Unit ) -> Unit     = { Log.i("tag", "restaurantBottomSheet does not set")
