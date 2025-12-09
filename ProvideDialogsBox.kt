@@ -42,10 +42,10 @@ fun ProvideDialogsBox(
                 )
             )
         },
-        LocalMenuBottomSheet provides provideFeedMenuBottomSheetDialog(),
-        LocalShareBottomSheet provides provideShareBottomSheetDialog(uiState.showShare),
-        LocalRestaurantBottomSheet provides restaurantBottomSheet,
-        LocalReportBottomSheet provides provideReportModal()
+        LocalMenuBottomSheet        provides provideFeedMenuBottomSheetDialog(),
+        LocalShareBottomSheet       provides provideShareBottomSheetDialog(uiState.showShare),
+        LocalRestaurantBottomSheet  provides restaurantBottomSheet,
+        LocalReportBottomSheet      provides provideReportModal()
     ) {
         DialogsBox(
             uiState = uiState,
